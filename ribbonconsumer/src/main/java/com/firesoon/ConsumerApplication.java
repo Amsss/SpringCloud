@@ -9,10 +9,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@ComponentScan("com.didispace")
 @EnableDiscoveryClient
 public class ConsumerApplication {
+
     @Bean
+    // 开启客户端负载均衡
     @LoadBalanced
     RestTemplate restTemplate() {
         return new RestTemplate();

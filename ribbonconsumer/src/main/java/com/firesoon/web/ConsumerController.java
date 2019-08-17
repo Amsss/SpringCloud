@@ -10,15 +10,15 @@ import org.springframework.web.client.RestTemplate;
 import java.util.logging.Logger;
 
 /**
- * @Author: ZhuZeZhao
- * @Description:
- * @Date: Create in 20:17 2018/4/30
- * @Modified By:
+ * @description:
+ * @author: zhuzz
+ * @date: 2019/8/17 17:34
  */
 @RestController
 public class ConsumerController {
 
     private final Logger logger = Logger.getLogger("ConsumerController");
+
     @Autowired
     RestTemplate restTemplate;
 
