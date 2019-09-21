@@ -10,6 +10,7 @@ import org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistrati
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -30,6 +31,9 @@ public class HelloController {
     @Qualifier("eurekaRegistration")
     @Autowired
     private Registration registration;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     @Value("${book.name}")
     private String name;
