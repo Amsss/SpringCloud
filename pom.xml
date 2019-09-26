@@ -30,6 +30,8 @@
 		<module>spring-boot-ribbon-consumer-hystrix</module>
 		<module>spring-boot-hystrix-dashboard</module>
 		<module>spring-boot-hystrix-turbine</module>
+		<module>spring-boot-config-server</module>
+		<module>spring-boot-config-client</module>
 	</modules>
 
 	<dependencies>
