@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-ribbon-consumer</artifactId>
+    <artifactId>spring-boot-ribbon-consumer-hystrix</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -30,6 +30,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <version>1.4.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
             <version>1.4.4.RELEASE</version>
         </dependency>
         <dependency>

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-ribbon-consumer</artifactId>
+    <artifactId>spring-boot-hystrix-turbine</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -23,13 +23,12 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-turbine</artifactId>
             <version>1.4.4.RELEASE</version>
         </dependency>
-        <!-- 整合ribbon -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-ribbon</artifactId>
+            <artifactId>spring-cloud-netflix-turbine</artifactId>
             <version>1.4.4.RELEASE</version>
         </dependency>
         <dependency>
