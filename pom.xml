@@ -24,11 +24,9 @@
 
 	<modules>
 		<module>spring-boot-hello</module>
-        <module>eurekaserver</module>
-		<module>ribbonconsumer</module>
 		<module>spring-boot-discovery-eureka</module>
-		<module>spring-boot-provider-user</module>
-		<module>spring-boot-consumer-movie-ribbon-with-hystrix</module>
+		<module>spring-boot-ribbon-consumer</module>
+		<module>spring-boot-feign-consumer</module>
 	</modules>
 
 	<dependencies>

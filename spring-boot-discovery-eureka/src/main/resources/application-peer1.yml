@@ -1,8 +1,12 @@
 server:
   port: 8761
 eureka:
+  server:
+    enable-self-preservation: false
   instance:
     hostname: peer1
   client:
+    registerWithEureka: true # 向注册中心注册自己 （默认为true）
+    fetchRegistry: true # 检索服务列表 （默认为true）
     serviceUrl:
       defaultZone: http://peer2:8762/eureka/

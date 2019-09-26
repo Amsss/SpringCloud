@@ -32,18 +32,12 @@ public class HelloController {
     @Autowired
     private Registration registration;
 
-    @Autowired
-    private RestTemplate restTemplate;
-
-    @Value("${book.name}")
-    private String name;
-
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String index() {
+    public String index(String name) {
         client.getInstances("hello-service");
         List<ServiceInstance> instance = client.getInstances(registration.getServiceId());
         logger.info("/hello, host:" + instance.get(0).getHost() + ", service_id:" + instance.get(0).getServiceId());
         System.out.print(name);
-        return "Hello World";
+        return "Hello World" + name;
     }
 }
