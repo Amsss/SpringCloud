@@ -12,7 +12,6 @@
 	<groupId>com.firesoon</groupId>
 	<artifactId>springcloud-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springcloud</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -32,6 +31,8 @@
 		<module>spring-boot-hystrix-turbine</module>
 		<module>spring-boot-config-server</module>
 		<module>spring-boot-config-client</module>
+		<module>spring-boot-config-client-eureka</module>
+		<module>spring-boot-config-server--eureka</module>
 	</modules>
 
 	<dependencies>

@@ -1,8 +1,8 @@
 server:
-  port: 8040
+  port: 8050
 spring:
   application:
-    name: config-server
+    name: config-server-eureka
   cloud:
     config:
       server:
@@ -11,3 +11,7 @@ spring:
           search-paths: config-repo       # git仓库地址下的相对地址，可以配置多个，用,分割。
           username: Amsss                                            # git仓库的账号
           password: lzsozmvzme123                                            # git仓库的密码
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
