@@ -19,6 +19,7 @@ import org.springframework.web.client.RestTemplate;
 public class HystrixApplication {
     /**
      * 实例化RestTemplate，通过@LoadBalanced注解开启均衡负载能力.
+     *
      * @return restTemplate
      */
     @Bean

@@ -1,7 +1,6 @@
 package com.firesoon.services.hystrix.impl;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +20,7 @@ public class RibbonHystrixServiceImpl {
 
     /**
      * 使用@HystrixCommand注解指定当该方法发生异常时调用的方法
+     *
      * @param id id
      * @return 通过id查询到的用户
      */
@@ -31,6 +31,7 @@ public class RibbonHystrixServiceImpl {
 
     /**
      * hystrix fallback方法
+     *
      * @param id id
      * @return 默认的用户
      */

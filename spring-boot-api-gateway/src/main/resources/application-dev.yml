@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: microservice-api-gateway
+server:
+  port: 8050
+zuul:
+  routes:
+    movie:                                              # 可以随便写
+      path: /user/**
+      url: http://localhost:8000/                       # path路由到的地址，也就是访问http://localhost:8050/user/**会路由到http://localhost:8000/**

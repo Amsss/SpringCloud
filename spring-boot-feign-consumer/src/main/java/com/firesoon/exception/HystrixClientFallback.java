@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 public class HystrixClientFallback implements FallbackFactory<String> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HystrixClientFallback.class);
+
     @Override
     public String create(Throwable throwable) {
         System.out.println("发生异常");

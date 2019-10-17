@@ -7,8 +7,8 @@
         <groupId>com.firesoon</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
+    <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-boot-ribbon-consumer-hystrix</artifactId>
     <packaging>jar</packaging>
 
@@ -43,6 +43,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
